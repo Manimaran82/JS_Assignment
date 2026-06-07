@@ -1,0 +1,35 @@
+<script>
+    const addCart = ()=>{
+        let items = 100
+     return {
+        Add : (cart)=>{
+            items+=cart
+            console.log("Add Cart :"+items);
+            
+        },
+        remove : (cart)=>{
+            if(items>0){
+                items-=cart
+                console.log("Remove items : "+items);
+                
+            }
+            else{
+                console.log("Cart is Empty");
+                
+            }
+            console.log(items);
+            
+
+        },
+        total : ()=>{
+            console.log("total balance :"+items);
+            
+        }
+     }
+    }
+    const v = addCart()
+
+    v.Add(300)
+    v.remove(100)
+
+</script>

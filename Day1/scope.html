@@ -1,0 +1,26 @@
+<script>
+    var globalVar = "I am Global";
+
+function testScope() {
+  var functionVar = "I am Function Scoped";
+
+  if (true) {
+    let blockVar = "I am Block Scoped";
+
+    console.log(globalVar);
+    console.log(functionVar);
+    console.log(blockVar);
+  }
+
+  console.log(globalVar);
+  console.log(functionVar);
+
+ 
+}
+
+testScope();
+
+console.log(globalVar);
+
+
+</script>

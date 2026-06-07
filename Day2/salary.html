@@ -1,0 +1,15 @@
+<script>
+    const total = (salary)=>{
+       const hra = salary*0.20
+       const da =salary*0.10
+       const totals = salary+hra+da
+
+       return{
+        HRA : hra,
+        DA  : da,
+        Total: totals
+       }
+    }
+    console.log(total(50000));
+    
+</script>

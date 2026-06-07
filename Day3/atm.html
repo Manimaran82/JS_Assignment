@@ -1,0 +1,20 @@
+<script>
+    const atm =()=>{
+        let amount = 5000
+
+        return {
+            Withdraw : (am)=>{
+                amount-=am
+                console.log(amount);
+                
+            },
+            balance : (am)=>{
+                console.log(amount);
+                
+            }
+        }
+    }
+    const w =atm()
+    w.balance()
+    w.Withdraw(400)
+</script>

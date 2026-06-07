@@ -1,0 +1,25 @@
+<script>
+    const bank =()=>{
+        let balance =5000
+
+        return{
+            deposite : (am)=>{
+                balance+=am
+                console.log(balance);
+                
+            },
+            withdraw : (am)=>{
+                balance-=am
+                console.log(balance);
+                
+            },
+            balanceCheck :(am)=>{
+                console.log(balance);
+            }
+        }
+    }
+    const amount =bank()
+    amount.balanceCheck()
+    amount.deposite(500)
+    amount.withdraw(2500)
+</script>

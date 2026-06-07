@@ -1,0 +1,24 @@
+<script>
+const bank =(amount)=>{
+    setTimeout(() => {
+       amount() 
+    }, 1000);
+
+}
+const balance =()=>{
+    console.log(1000);
+    
+}
+const withdraw = ()=>{
+    console.log(300);
+    
+}
+const saving =()=>{
+    console.log(700);
+    
+}
+bank(balance)
+bank(withdraw)
+bank(saving)
+
+</script>

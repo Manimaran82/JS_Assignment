@@ -1,0 +1,13 @@
+<script>
+    const visit =()=>{
+        let count =0
+        return inner =()=>{
+            count++
+            console.log("Count :"+count);
+            
+        }
+    }
+    const v = visit()
+    v()
+    v()
+</script>
